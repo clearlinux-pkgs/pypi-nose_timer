@@ -4,7 +4,7 @@
 #
 Name     : pypi-nose_timer
 Version  : 1.0.1
-Release  : 3
+Release  : 4
 URL      : https://files.pythonhosted.org/packages/ee/fc/ad961aa29606e20b3c85f739ab7d2e5abe0c285310c468a5850dcaf9c720/nose-timer-1.0.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/ee/fc/ad961aa29606e20b3c85f739ab7d2e5abe0c285310c468a5850dcaf9c720/nose-timer-1.0.1.tar.gz
 Summary  : A timer plugin for nosetests
@@ -14,9 +14,6 @@ Requires: pypi-nose_timer-license = %{version}-%{release}
 Requires: pypi-nose_timer-python = %{version}-%{release}
 Requires: pypi-nose_timer-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
-Provides: nose-timer
-Provides: nose-timer-python
-Provides: nose-timer-python3
 BuildRequires : pypi(nose)
 
 %description
@@ -59,7 +56,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641459651
+export SOURCE_DATE_EPOCH=1650928955
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
