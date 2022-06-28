@@ -4,7 +4,7 @@
 #
 Name     : pypi-nose_timer
 Version  : 1.0.1
-Release  : 5
+Release  : 6
 URL      : https://files.pythonhosted.org/packages/ee/fc/ad961aa29606e20b3c85f739ab7d2e5abe0c285310c468a5850dcaf9c720/nose-timer-1.0.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/ee/fc/ad961aa29606e20b3c85f739ab7d2e5abe0c285310c468a5850dcaf9c720/nose-timer-1.0.1.tar.gz
 Summary  : A timer plugin for nosetests
@@ -59,7 +59,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1653346996
+export SOURCE_DATE_EPOCH=1656391135
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -97,7 +97,7 @@ export FCFLAGS="$FCFLAGS -m64 -march=x86-64-v3 "
 export LDFLAGS="$LDFLAGS -m64 -march=x86-64-v3 "
 python3 -tt setup.py build install --root=%{buildroot}-v3
 popd
-/usr/bin/elf-move.py avx2 %{buildroot}-v3 %{buildroot}/usr/share/clear/optimized-elf/ %{buildroot}/usr/share/clear/filemap/filemap-%{name}
+/usr/bin/elf-move.py avx2 %{buildroot}-v3 %{buildroot} %{buildroot}/usr/share/clear/filemap/filemap-%{name}
 
 %files
 %defattr(-,root,root,-)
